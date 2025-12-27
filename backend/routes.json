@@ -1,0 +1,165 @@
+[
+  {
+    "id": "south_downs_amberley_loop",
+    "name": "Amberley Downs & River Arun",
+    "region": "South Downs",
+    "description": "A classic South Downs walk with sweeping chalk ridge views, a riverside return along the Arun, and a proper pub lunch in between.",
+    "trailhead": {"lat": 50.9013, "lon": -0.5427},
+    "polyline": "_{~xHjwIeB}@gCkAuBs@wCq@yCYwCFyCd@oCz@mCrAiBrAuAvAoAdBaAfBs@xBi@|Bc@~BI`CI|BFxBXvBj@tBz@nBfAnB~AhBfBzAvBnA`CbAfC~@xCr@~Cf@`D\\bDJdDAdDQ~CYzCi@tCw@nC_AhCkAfCuArByAlB{AjB_BbBgBzAoB",
+    "distance_km": 14.2,
+    "elevation_gain_m": 340,
+    "estimated_duration_hours": 4.0,
+    "start_station": "London Victoria",
+    "trailhead_station": "Amberley",
+    "approx_travel_minutes": 85,
+    "bailout_stations": ["Arundel"],
+    "tags": ["chalk", "ridgey", "exposed", "riverside"],
+    "amenities": [
+      {
+        "name": "The Bridge Inn",
+        "type": "pub",
+        "lat": 50.9005,
+        "lon": -0.5512,
+        "url": "https://www.thebridgeinnamberley.com",
+        "hours": {"sat": "12:00-15:00,18:00-23:00", "sun": "12:00-16:00"},
+        "notes": "Reservations recommended for Sunday lunch"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=800",
+    "hero_image_attribution": "Photo by Jonny Gios on Unsplash"
+  },
+  {
+    "id": "box_hill_dorking",
+    "name": "Box Hill & Stepping Stones",
+    "region": "Surrey Hills",
+    "description": "A Surrey Hills favourite with woodland trails, the famous stepping stones across the River Mole, and panoramic views from Box Hill summit.",
+    "trailhead": {"lat": 51.2549, "lon": -0.3132},
+    "polyline": "oq}xH~lZ}AkBsAgBmAuBgAcCaAkCy@sCq@{Ci@aDa@eDY_EQ_EI_EA}D@{DJ{DV{Df@yDt@wD~@uDjAsDrAqDxAoDzAoD|AoDzAmD",
+    "distance_km": 10.5,
+    "elevation_gain_m": 280,
+    "estimated_duration_hours": 3.0,
+    "start_station": "London Victoria",
+    "trailhead_station": "Box Hill & Westhumble",
+    "approx_travel_minutes": 55,
+    "bailout_stations": ["Dorking"],
+    "tags": ["woodland", "chalk", "stepping-stones"],
+    "amenities": [
+      {
+        "name": "Box Hill Cafe",
+        "type": "cafe",
+        "lat": 51.2570,
+        "lon": -0.3089,
+        "url": "https://www.nationaltrust.org.uk/box-hill",
+        "hours": {"sat": "09:00-17:00", "sun": "09:00-17:00"},
+        "notes": "National Trust cafe at summit"
+      },
+      {
+        "name": "The Stepping Stones Pub",
+        "type": "pub",
+        "lat": 51.2498,
+        "lon": -0.3201,
+        "url": "https://www.steppingstonesdorking.com",
+        "hours": {"sat": "11:00-23:00", "sun": "11:00-22:30"},
+        "notes": null
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?w=800",
+    "hero_image_attribution": "Photo by Annie Spratt on Unsplash"
+  },
+  {
+    "id": "seven_sisters_seaford",
+    "name": "Seven Sisters Coastal Walk",
+    "region": "South Downs",
+    "description": "Dramatic white chalk cliffs, the iconic Seven Sisters undulations, and a finish in the seaside town of Seaford. One of England's most photogenic walks.",
+    "trailhead": {"lat": 50.7611, "lon": 0.1533},
+    "polyline": "ufhxHaaKqBg@uBUuBCuB\\uBv@sBnAqB~AoBfBmBnBkBtBgBzBcB~Ba@dCGhCXlCv@lCnAfCzAdCdBzBjBtBnBnBtBhBxB`B|B",
+    "distance_km": 12.8,
+    "elevation_gain_m": 420,
+    "estimated_duration_hours": 4.5,
+    "start_station": "London Victoria",
+    "trailhead_station": "Eastbourne",
+    "approx_travel_minutes": 90,
+    "bailout_stations": ["Seaford"],
+    "tags": ["coastal", "chalk", "exposed", "clifftop"],
+    "amenities": [
+      {
+        "name": "The Cuckmere Inn",
+        "type": "pub",
+        "lat": 50.7712,
+        "lon": 0.1421,
+        "url": null,
+        "hours": {"sat": "11:00-22:00", "sun": "11:00-21:00"},
+        "notes": "Near Exceat Bridge, midway point"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1558551649-e44c8f992010?w=800",
+    "hero_image_attribution": "Photo by Samuel Ferrara on Unsplash"
+  },
+  {
+    "id": "epping_forest_loop",
+    "name": "Epping Forest Ancient Woodland",
+    "region": "Epping Forest",
+    "description": "An easy loop through ancient pollarded beech and hornbeam woodland, with Iron Age earthworks at Loughton Camp. Perfect for muddy-boot beginners.",
+    "trailhead": {"lat": 51.6522, "lon": 0.0512},
+    "polyline": "_k`yH_vEaAeBw@sBo@uBg@wB_@yBWyBO{BGyCByCD{CL{CR{C\\yC",
+    "distance_km": 8.5,
+    "elevation_gain_m": 85,
+    "estimated_duration_hours": 2.5,
+    "start_station": "Liverpool Street",
+    "trailhead_station": "Loughton",
+    "approx_travel_minutes": 35,
+    "bailout_stations": ["Chingford", "Theydon Bois"],
+    "tags": ["woodland", "ancient", "clay", "muddy"],
+    "amenities": [
+      {
+        "name": "The Royal Oak",
+        "type": "pub",
+        "lat": 51.6478,
+        "lon": 0.0523,
+        "url": null,
+        "hours": {"sat": "11:00-23:00", "sun": "12:00-22:00"},
+        "notes": "Traditional pub in Loughton"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=800",
+    "hero_image_attribution": "Photo by Johannes Plenio on Unsplash"
+  },
+  {
+    "id": "chilterns_wendover_circular",
+    "name": "Wendover Woods & Coombe Hill",
+    "region": "Chilterns",
+    "description": "Beech woodlands, Coombe Hill's monument with views to the Vale of Aylesbury, and a gentle circular through classic Chilterns scenery.",
+    "trailhead": {"lat": 51.7651, "lon": -0.7512},
+    "polyline": "qb~xH`dcAyAuBkAyBaA_Cs@cCi@gCa@gCYiCQkCIkCAkC@mCHmCPmC",
+    "distance_km": 11.5,
+    "elevation_gain_m": 260,
+    "estimated_duration_hours": 3.5,
+    "start_station": "London Marylebone",
+    "trailhead_station": "Wendover",
+    "approx_travel_minutes": 60,
+    "bailout_stations": ["Great Missenden"],
+    "tags": ["woodland", "chalk", "beech"],
+    "amenities": [
+      {
+        "name": "The Shoulder of Mutton",
+        "type": "pub",
+        "lat": 51.7637,
+        "lon": -0.7461,
+        "url": "https://shoulderofmuttonwendover.co.uk",
+        "hours": {"sat": "12:00-23:00", "sun": "12:00-21:00"},
+        "notes": "Cosy pub in Wendover village centre"
+      },
+      {
+        "name": "Wendover Woods Cafe",
+        "type": "cafe",
+        "lat": 51.7701,
+        "lon": -0.7432,
+        "url": null,
+        "hours": {"sat": "09:00-16:30", "sun": "09:00-16:30"},
+        "notes": "Forestry England cafe, seasonal hours"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+    "hero_image_attribution": "Photo by David Kovalenko on Unsplash"
+  }
+]
