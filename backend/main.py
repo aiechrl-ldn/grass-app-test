@@ -89,6 +89,15 @@ def load_routes() -> list[dict]:
 
 # --- Endpoints ---
 
+@app.get("/")
+def root():
+    return {
+        "message": "Go-Now API is running",
+        "docs": "/docs",
+        "health": "/health"
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok", "timestamp": datetime.now(timezone.utc).isoformat()}
