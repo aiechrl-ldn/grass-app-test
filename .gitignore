@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+
+# iOS
+*.xcuserstate
+*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
