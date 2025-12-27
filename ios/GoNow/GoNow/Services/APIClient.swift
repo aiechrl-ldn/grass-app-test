@@ -8,7 +8,7 @@ class APIClient {
     
     /// Backend URL - update this when deploying to Replit
     /// For development, can point to localhost
-    static var baseURL: String = "http://localhost:8000"
+    static var baseURL: String = "https://grass-app-test--aiechrl-ldn.replit.app"
     
     /// Shared instance
     static let shared = APIClient()
