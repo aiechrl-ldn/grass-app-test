@@ -13,6 +13,7 @@ from pathlib import Path
 
 from scoring import score_route, generate_summary
 from weather import get_weather_forecast
+from nlp import parse_query, apply_query_filters
 
 app = FastAPI(title="Go-Now API", version="0.1.0")
 
@@ -100,6 +101,23 @@ async def get_recommendations(request: RecommendationsRequest):
     """
     routes = load_routes()
     
+    # Parse natural language query and get preference overrides
+    query_overrides = parse_query(request.query_text)
+    
+    # Apply query-based filters to routes
+    routes = apply_query_filters(routes, query_overrides)
+    
+    # Merge query overrides into preferences
+    prefs_dict = request.prefs.model_dump()
+    if "max_travel_minutes" in query_overrides:
+        prefs_dict["max_travel_minutes"] = query_overrides["max_travel_minutes"]
+    if "needs_pub" in query_overrides:
+        prefs_dict["needs_pub"] = query_overrides["needs_pub"]
+    if "rain_tolerance_mm_per_hr" in query_overrides:
+        prefs_dict["rain_tolerance_mm_per_hr"] = query_overrides["rain_tolerance_mm_per_hr"]
+    if "wind_tolerance" in query_overrides:
+        prefs_dict["wind_tolerance"] = query_overrides["wind_tolerance"]
+    
     # Parse leave time or default to now
     if request.user.leave_after_iso:
         try:
@@ -113,7 +131,7 @@ async def get_recommendations(request: RecommendationsRequest):
     scored_routes = []
     for route in routes:
         # Skip routes that exceed max travel time
-        if route.get("approx_travel_minutes", 999) > request.prefs.max_travel_minutes:
+        if route.get("approx_travel_minutes", 999) > prefs_dict["max_travel_minutes"]:
             continue
         
         # Fetch weather for this route's trailhead
@@ -127,7 +145,7 @@ async def get_recommendations(request: RecommendationsRequest):
         score_result = score_route(
             route=route,
             weather=weather,
-            prefs=request.prefs.model_dump(),
+            prefs=prefs_dict,
             leave_time=leave_time
         )
         
