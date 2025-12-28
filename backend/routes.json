@@ -896,5 +896,546 @@
     ],
     "hero_image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
     "hero_image_attribution": "Photo by Lukasz Szmigiel on Unsplash"
+  },
+  {
+    "id": "kent_coast_folkestone_dover",
+    "name": "White Cliffs: Folkestone to Dover",
+    "region": "Kent Coast",
+    "description": "Walk the iconic White Cliffs from Folkestone to Dover along the North Downs Way. This spectacular coastal route passes through Folkestone Warren, climbs the dramatic chalk cliffs with panoramic Channel views, and visits the Battle of Britain Memorial.",
+    "trailhead": {
+      "lat": 51.0789,
+      "lon": 1.1712
+    },
+    "polyline": "_{cyHk_`@eBkBgBwAgBmA_BaAyAq@wAe@uA_@sAQsAGsA@sAJsAVqAf@oAr@mA|@kAfAiAtAgA|A",
+    "distance_km": 14.5,
+    "elevation_gain_m": 270,
+    "estimated_duration_hours": 4.5,
+    "start_station": "St Pancras International",
+    "trailhead_station": "Folkestone Central",
+    "approx_travel_minutes": 90,
+    "bailout_stations": [
+      "Dover Priory"
+    ],
+    "tags": [
+      "coastal",
+      "chalk",
+      "clifftop",
+      "exposed",
+      "historic",
+      "north-downs-way"
+    ],
+    "amenities": [
+      {
+        "name": "Royal Oak",
+        "type": "pub",
+        "lat": 51.1012,
+        "lon": 1.2234,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Traditional pub at Capel-le-Ferne, midway point"
+      },
+      {
+        "name": "Battle of Britain Memorial Café",
+        "type": "cafe",
+        "lat": 51.1034,
+        "lon": 1.2156,
+        "url": null,
+        "hours": {
+          "sat": "10:00-17:00",
+          "sun": "10:00-17:00"
+        },
+        "notes": "At the memorial, stunning cliff views"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800",
+    "hero_image_attribution": "Photo by Samuel Ferrara on Unsplash"
+  },
+  {
+    "id": "kent_coast_faversham_whitstable",
+    "name": "Saxon Shore: Faversham to Whitstable",
+    "region": "Kent Coast",
+    "description": "An easy, windswept coastal walk along the Saxon Shore Way from historic Faversham to the charming seaside town of Whitstable. Pass through nature reserves, alongside creeks and marshlands, past colorful beach huts. Finish with fresh oysters in Whitstable's vibrant Old Town.",
+    "trailhead": {
+      "lat": 51.3156,
+      "lon": 0.8912
+    },
+    "polyline": "qvhyHmbS_A}@}@{@{@y@w@y@u@{@s@}@o@_Am@aAk@cAi@eAg@eAe@gAc@gAa@iA",
+    "distance_km": 15.7,
+    "elevation_gain_m": 30,
+    "estimated_duration_hours": 4.5,
+    "start_station": "London Victoria",
+    "trailhead_station": "Faversham",
+    "approx_travel_minutes": 85,
+    "bailout_stations": [
+      "Whitstable"
+    ],
+    "tags": [
+      "coastal",
+      "flat",
+      "marshland",
+      "beach-huts",
+      "accessible",
+      "saxon-shore-way"
+    ],
+    "amenities": [
+      {
+        "name": "The Sportsman",
+        "type": "pub",
+        "lat": 51.3456,
+        "lon": 1.0234,
+        "url": "https://thesportsmanseasalter.co.uk",
+        "hours": {
+          "sat": "12:00-14:30,19:00-21:00",
+          "sun": "12:00-15:00"
+        },
+        "notes": "Michelin-starred pub at Seasalter. Book ahead."
+      },
+      {
+        "name": "Whitstable Oyster Company",
+        "type": "pub",
+        "lat": 51.3612,
+        "lon": 1.0278,
+        "url": null,
+        "hours": {
+          "sat": "10:00-22:00",
+          "sun": "10:00-21:00"
+        },
+        "notes": "Famous for oysters and seafood at finish"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    "hero_image_attribution": "Photo by Sean O. on Unsplash"
+  },
+  {
+    "id": "south_downs_ditchling_beacon",
+    "name": "Ditchling Beacon & Jack and Jill",
+    "region": "South Downs",
+    "description": "Climb steeply from Hassocks to reach the highest point in East Sussex at Ditchling Beacon, passing the iconic Jack & Jill windmills. Follow the magnificent South Downs Way ridge with sweeping views before descending to historic Lewes. An ice cream van usually parks at the beacon.",
+    "trailhead": {
+      "lat": 50.9178,
+      "lon": -0.1456
+    },
+    "polyline": "qrhxHxmBgBuBcBsBaBqB_BoB}AoByAmBwAkBuAiBsAgBqAeBoAcBmAaB",
+    "distance_km": 18.5,
+    "elevation_gain_m": 462,
+    "estimated_duration_hours": 5.0,
+    "start_station": "London Victoria",
+    "trailhead_station": "Hassocks",
+    "approx_travel_minutes": 55,
+    "bailout_stations": [
+      "Lewes"
+    ],
+    "tags": [
+      "chalk",
+      "ridgey",
+      "downland",
+      "exposed",
+      "windmills",
+      "south-downs-way"
+    ],
+    "amenities": [
+      {
+        "name": "The Half Moon",
+        "type": "pub",
+        "lat": 50.9234,
+        "lon": -0.0512,
+        "url": null,
+        "hours": {
+          "sat": "12:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Excellent country pub at Plumpton, halfway point"
+      },
+      {
+        "name": "White Hart Hotel",
+        "type": "pub",
+        "lat": 50.8734,
+        "lon": 0.0089,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "11:00-22:00"
+        },
+        "notes": "Historic pub in Lewes at finish"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
+    "hero_image_attribution": "Photo by Federico Respini on Unsplash"
+  },
+  {
+    "id": "thames_path_putney_richmond",
+    "name": "Thames Path: Putney to Richmond",
+    "region": "Thames Valley",
+    "description": "A tree-lined Thames Path walk through one of London's most scenic riverside stretches. Pass Hammersmith Bridge, skirt Kew Gardens' perimeter, and walk through the Old Deer Park to finish at elegant Richmond. Perfect for a shorter day with numerous riverside pubs.",
+    "trailhead": {
+      "lat": 51.4612,
+      "lon": -0.2156
+    },
+    "polyline": "mryyHrcNgAw@gAu@gAs@gAq@gAo@gAm@gAk@gAi@gAg@gAe@gAc@gAa@",
+    "distance_km": 13.2,
+    "elevation_gain_m": 50,
+    "estimated_duration_hours": 3.5,
+    "start_station": "Putney Bridge",
+    "trailhead_station": "Putney",
+    "approx_travel_minutes": 20,
+    "bailout_stations": [
+      "Hammersmith",
+      "Kew Bridge",
+      "Richmond"
+    ],
+    "tags": [
+      "riverside",
+      "thames-path",
+      "urban-green",
+      "parkland",
+      "accessible",
+      "flat"
+    ],
+    "amenities": [
+      {
+        "name": "The Dove",
+        "type": "pub",
+        "lat": 51.4912,
+        "lon": -0.2345,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:30"
+        },
+        "notes": "Historic riverside pub at Hammersmith"
+      },
+      {
+        "name": "The White Hart",
+        "type": "pub",
+        "lat": 51.4734,
+        "lon": -0.2512,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Thames-side location at Barnes"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800",
+    "hero_image_attribution": "Photo by Benjamin Davies on Unsplash"
+  },
+  {
+    "id": "lee_valley_cheshunt_broxbourne",
+    "name": "Lee Valley: Cheshunt to Broxbourne",
+    "region": "Lee Valley",
+    "description": "Explore the extensive wetland landscape of River Lee Country Park with a detour to historic Waltham Abbey. This gentle riverside walk follows the Lee Navigation through nature reserves, past fishermen, narrow boats, and abundant birdlife. One of London's largest wetland areas.",
+    "trailhead": {
+      "lat": 51.7012,
+      "lon": -0.0312
+    },
+    "polyline": "cs_zHvcCaAq@aAo@aAm@aAk@aAi@aAg@aAe@aAc@aAa@aA_@aA]aA[aAY",
+    "distance_km": 17.5,
+    "elevation_gain_m": 80,
+    "estimated_duration_hours": 4.5,
+    "start_station": "Liverpool Street",
+    "trailhead_station": "Cheshunt",
+    "approx_travel_minutes": 30,
+    "bailout_stations": [
+      "Waltham Cross",
+      "Broxbourne"
+    ],
+    "tags": [
+      "riverside",
+      "wetland",
+      "canal",
+      "flat",
+      "nature-reserve",
+      "accessible"
+    ],
+    "amenities": [
+      {
+        "name": "Waltham Abbey Church Café",
+        "type": "cafe",
+        "lat": 51.6867,
+        "lon": -0.0045,
+        "url": null,
+        "hours": {
+          "sat": "10:00-16:00",
+          "sun": "11:00-16:00"
+        },
+        "notes": "In the Abbey Gardens, lovely setting"
+      },
+      {
+        "name": "The Crown",
+        "type": "pub",
+        "lat": 51.7456,
+        "lon": -0.0156,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Near Broxbourne station at finish"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800",
+    "hero_image_attribution": "Photo by Patrick on Unsplash"
+  },
+  {
+    "id": "kent_downs_otford_circular",
+    "name": "Otford Circular via Shoreham",
+    "region": "Kent Downs",
+    "description": "A varied Kent Downs walk ascending Otford Mount on the North Downs Way with fine views across the Darent Valley. Pass through bluebell woods into Magpie Bottom valley, then descend steeply to picturesque Shoreham village. Features the world's largest scale model of the Solar System.",
+    "trailhead": {
+      "lat": 51.3089,
+      "lon": 0.1912
+    },
+    "polyline": "gwhyHsfKcBwAcBuAaBsAaBqAaBoA_BmA_BkA_BiA}AgA}AeA{AcA",
+    "distance_km": 12.0,
+    "elevation_gain_m": 280,
+    "estimated_duration_hours": 3.5,
+    "start_station": "London Victoria",
+    "trailhead_station": "Otford",
+    "approx_travel_minutes": 35,
+    "bailout_stations": [
+      "Shoreham"
+    ],
+    "tags": [
+      "chalk",
+      "north-downs-way",
+      "woodland",
+      "valley",
+      "bluebells",
+      "views"
+    ],
+    "amenities": [
+      {
+        "name": "The Kings Arms",
+        "type": "pub",
+        "lat": 51.3312,
+        "lon": 0.1823,
+        "url": null,
+        "hours": {
+          "sat": "12:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Picture-postcard pub in Shoreham"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1518173946687-a4c036bc6d9a?w=800",
+    "hero_image_attribution": "Photo by Annie Spratt on Unsplash"
+  },
+  {
+    "id": "surrey_hills_holmbury",
+    "name": "Leith Hill & Holmbury Hill",
+    "region": "Surrey Hills",
+    "description": "A tough but rewarding Surrey Hills challenge following the Greensand Way over major summits. Climb to Leith Hill tower (highest point in SE England at 294m), then tackle Holmbury Hill with panoramic views. Dramatic elevation changes through magnificent ancient woodland.",
+    "trailhead": {
+      "lat": 51.1789,
+      "lon": -0.3721
+    },
+    "polyline": "au{xH~qYqBcCqBaCoB_CoB}BmB{BmByBkBwBkBuBiBsBiBqBgBoBgBmB",
+    "distance_km": 18.7,
+    "elevation_gain_m": 550,
+    "estimated_duration_hours": 5.5,
+    "start_station": "London Victoria",
+    "trailhead_station": "Holmwood",
+    "approx_travel_minutes": 65,
+    "bailout_stations": [
+      "Dorking Deepdene",
+      "Gomshall"
+    ],
+    "tags": [
+      "woodland",
+      "greensand-way",
+      "hills",
+      "viewpoints",
+      "challenging",
+      "steep"
+    ],
+    "amenities": [
+      {
+        "name": "The Royal Oak",
+        "type": "pub",
+        "lat": 51.1912,
+        "lon": -0.4123,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "Recommended lunch stop at Holmbury St Mary"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800",
+    "hero_image_attribution": "Photo by Matthew Smith on Unsplash"
+  },
+  {
+    "id": "thames_path_goring_pangbourne",
+    "name": "Goring Gap: Pangbourne Circular",
+    "region": "Thames Valley",
+    "description": "Link three pretty Thames-side villages via wooded ridges with splendid views over the Goring Gap where the Thames cuts through the Chilterns. Descend to Goring for lunch, then follow the Thames Path through meadows with an optional climb through Hartslock Nature Reserve, famous for orchids.",
+    "trailhead": {
+      "lat": 51.4912,
+      "lon": -1.0856
+    },
+    "polyline": "mp{xHnheAoAuBkAuBiAwBgAyBeA{BcA}BaA_CaAaC_AcC}@eC",
+    "distance_km": 16.0,
+    "elevation_gain_m": 300,
+    "estimated_duration_hours": 4.5,
+    "start_station": "Paddington",
+    "trailhead_station": "Pangbourne",
+    "approx_travel_minutes": 60,
+    "bailout_stations": [
+      "Goring & Streatley"
+    ],
+    "tags": [
+      "thames-path",
+      "riverside",
+      "woodland",
+      "meadows",
+      "ridges",
+      "wildflowers"
+    ],
+    "amenities": [
+      {
+        "name": "The Miller of Mansfield",
+        "type": "pub",
+        "lat": 51.5189,
+        "lon": -1.1234,
+        "url": null,
+        "hours": {
+          "sat": "12:00-23:00",
+          "sun": "12:00-21:00"
+        },
+        "notes": "Excellent pub in Goring, perfect for lunch"
+      },
+      {
+        "name": "The Swan at Pangbourne",
+        "type": "pub",
+        "lat": 51.4889,
+        "lon": -1.0834,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "11:00-22:00"
+        },
+        "notes": "Riverside pub at finish"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800",
+    "hero_image_attribution": "Photo by Martin Sanchez on Unsplash"
+  },
+  {
+    "id": "kent_coast_broadstairs_margate",
+    "name": "Thanet Coast: Broadstairs to Margate",
+    "region": "Kent Coast",
+    "description": "An easy coastal walk linking three historic seaside resorts on the Isle of Thanet. Walk along low chalk cliffs with Channel views, passing stunning sandy bays including the secluded Botany Bay. Finish in regenerated Margate with its Turner Contemporary gallery. Excellent swimming on sunny days.",
+    "trailhead": {
+      "lat": 51.3589,
+      "lon": 1.4389
+    },
+    "polyline": "qshyHklcAeAgAeAiAcAkAcAmAaAoAaAqA_AsA_AuA}@wA}@yA{@{A",
+    "distance_km": 15.0,
+    "elevation_gain_m": 150,
+    "estimated_duration_hours": 4.0,
+    "start_station": "St Pancras International",
+    "trailhead_station": "Broadstairs",
+    "approx_travel_minutes": 90,
+    "bailout_stations": [
+      "Margate"
+    ],
+    "tags": [
+      "coastal",
+      "chalk",
+      "sandy-beaches",
+      "clifftop",
+      "seaside",
+      "swimming"
+    ],
+    "amenities": [
+      {
+        "name": "The Charles Dickens",
+        "type": "pub",
+        "lat": 51.3612,
+        "lon": 1.4412,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "In Broadstairs old town near Viking Bay"
+      },
+      {
+        "name": "The Captain Digby",
+        "type": "pub",
+        "lat": 51.3789,
+        "lon": 1.4123,
+        "url": null,
+        "hours": {
+          "sat": "11:00-22:00",
+          "sun": "11:00-21:00"
+        },
+        "notes": "Clifftop pub near Botany Bay"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?w=800",
+    "hero_image_attribution": "Photo by Annie Spratt on Unsplash"
+  },
+  {
+    "id": "high_weald_tunbridge_wells",
+    "name": "Tunbridge Wells Sandstone Trail",
+    "region": "High Weald",
+    "description": "Explore the varied High Weald landscape around the historic spa town. This circular passes through restored heathland, ancient woodland with massive sandstone outcrops popular with climbers, and visits Harrison's Rocks. Finishes alongside the heritage Spa Valley Railway.",
+    "trailhead": {
+      "lat": 51.1312,
+      "lon": 0.2634
+    },
+    "polyline": "mtxxHkfGqAsBmAuBkAwBiAyBgA{BeA}BcA_CaAaCaAcC_AeC",
+    "distance_km": 17.0,
+    "elevation_gain_m": 499,
+    "estimated_duration_hours": 5.0,
+    "start_station": "Charing Cross",
+    "trailhead_station": "Tunbridge Wells",
+    "approx_travel_minutes": 60,
+    "bailout_stations": [
+      "Groombridge",
+      "Eridge"
+    ],
+    "tags": [
+      "woodland",
+      "high-weald",
+      "sandstone",
+      "parkland",
+      "heathland",
+      "historic"
+    ],
+    "amenities": [
+      {
+        "name": "The Nevill Crest and Gun",
+        "type": "pub",
+        "lat": 51.0912,
+        "lon": 0.2012,
+        "url": null,
+        "hours": {
+          "sat": "11:00-23:00",
+          "sun": "12:00-22:00"
+        },
+        "notes": "500+ year old pub at Eridge Green, suggested lunch stop"
+      },
+      {
+        "name": "High Rocks Inn",
+        "type": "pub",
+        "lat": 51.1134,
+        "lon": 0.2345,
+        "url": null,
+        "hours": {
+          "sat": "11:00-22:00",
+          "sun": "12:00-21:00"
+        },
+        "notes": "Near the famous sandstone climbing rocks"
+      }
+    ],
+    "hero_image_url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800",
+    "hero_image_attribution": "Photo by Dave Hoefler on Unsplash"
   }
 ]
