@@ -54,6 +54,13 @@ export interface RouteMap {
   pois: POI[];
 }
 
+export interface RouteStats {
+  distance_km?: number;
+  duration_hours?: number;
+  elevation_gain_m?: number;
+  travel_minutes?: number;
+}
+
 export interface RouteCard {
   route_id: string;
   title: string;
@@ -65,6 +72,9 @@ export interface RouteCard {
   elevation_gain_m: number;
   distance_km: number;
   map: RouteMap;
+  region?: string;
+  tags?: string[];
+  stats?: RouteStats;
 }
 
 export interface RecommendationsResponse {
