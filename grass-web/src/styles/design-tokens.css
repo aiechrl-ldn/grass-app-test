@@ -1,0 +1,99 @@
+/* Grass Design System - Celtic/Atmospheric Theme */
+
+:root {
+  /* === Day Mode Colors === */
+  --bg-primary: #1a1f1a;           /* Moss black */
+  --bg-secondary: #2d2a24;         /* Peat brown */
+  --bg-card: #3d3a34;              /* Lighter peat */
+  --bg-card-hover: #4a4740;        /* Card hover state */
+
+  --text-primary: #f5f5f0;         /* Warm white */
+  --text-secondary: #b8b5a8;       /* Stone grey */
+  --text-muted: #8a8778;           /* Weathered grey */
+
+  --accent-gold: #c9a227;          /* Bronze/gold highlight */
+  --accent-sage: #7d8c6e;          /* Sage green */
+  --accent-heather: #9d8aa5;       /* Heather purple */
+  --accent-mist: #d4dce4;          /* Silver mist */
+
+  /* Score colors */
+  --score-perfect: #5cb85c;        /* Green - perfect for today */
+  --score-good: #c9a227;           /* Gold - good conditions */
+  --score-possible: #d4763d;       /* Burnt orange - possible */
+
+  /* Weather overlay colors */
+  --weather-rain: rgba(180, 200, 220, 0.15);
+  --weather-mist: rgba(212, 220, 228, 0.25);
+  --weather-sun: rgba(201, 162, 39, 0.1);
+  --weather-wind: rgba(180, 190, 200, 0.12);
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(245, 245, 240, 0.08);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 16px 48px rgba(0, 0, 0, 0.5);
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Typography */
+  --font-display: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-hero: 2.5rem;
+  --text-title: 1.5rem;
+  --text-tagline: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-micro: 0.75rem;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* === Night Mode === */
+.dark {
+  --bg-primary: #0d0f0d;           /* Deep moss */
+  --bg-secondary: #1a1814;         /* Dark peat */
+  --bg-card: #252320;              /* Card surface */
+  --bg-card-hover: #2e2b28;        /* Card hover state */
+
+  --text-primary: #e8e8e0;         /* Soft white */
+  --text-secondary: #9a9788;       /* Dimmed stone */
+  --text-muted: #6d6a60;           /* Deeper weathered grey */
+
+  --accent-gold: #a68820;          /* Muted gold */
+  --accent-mist: #a8b8c8;          /* Cooler mist */
+
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-elevated: 0 16px 48px rgba(0, 0, 0, 0.7);
+}
+
+/* === Celtic Glyph System === */
+/* Route type icons - used as background SVGs */
+.glyph-chalk-horse::before { content: "◆"; } /* South Downs chalk routes */
+.glyph-oak-leaf::before { content: "❧"; }    /* Woodland walks */
+.glyph-standing-stone::before { content: "⧫"; } /* Ancient/historic */
+.glyph-hare::before { content: "◇"; }        /* Quick/easy walks */
+.glyph-raven::before { content: "✧"; }       /* Exposed/dramatic */
+.glyph-river::before { content: "≈"; }       /* Riverside/Thames */
+.glyph-cliff::before { content: "▲"; }       /* Coastal routes */
+.glyph-acorn::before { content: "●"; }       /* Family-friendly */
