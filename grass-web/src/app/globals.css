@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @import "../styles/design-tokens.css";
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* Import Google Fonts - Editorial Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme inline {
   --color-background: var(--bg-primary);
@@ -26,83 +26,160 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* === Typography === */
+/* === Editorial Typography === */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: var(--leading-tight);
   color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
 }
 
 h1 {
-  font-size: var(--text-hero);
+  font-size: var(--text-display);
 }
 
 h2 {
-  font-size: var(--text-title);
+  font-size: var(--text-h1);
 }
 
 h3 {
-  font-size: var(--text-tagline);
+  font-size: var(--text-h2);
+}
+
+h4 {
+  font-size: var(--text-h3);
 }
 
 p {
   color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
 }
 
-/* === Weather Overlay Animations === */
+/* Editorial emphasis */
+.editorial-headline {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 700;
+  line-height: var(--leading-none);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+}
+
+.editorial-subhead {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  font-style: italic;
+  line-height: var(--leading-snug);
+  color: var(--text-secondary);
+}
+
+.editorial-label {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* === Weather Overlay Animations - More Visible === */
 @keyframes rain-fall {
   0% {
     transform: translateY(-100%) translateX(0);
     opacity: 0;
   }
   10% {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   90% {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(100vh) translateX(-20px);
+    transform: translateY(100vh) translateX(-30px);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-fall-heavy {
+  0% {
+    transform: translateY(-100%) translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-40px);
     opacity: 0;
   }
 }
 
 @keyframes mist-drift {
   0%, 100% {
-    transform: translateX(-5%) scale(1);
-    opacity: 0.2;
+    transform: translateX(-10%) scale(1);
+    opacity: 0.4;
   }
   50% {
-    transform: translateX(5%) scale(1.05);
-    opacity: 0.35;
+    transform: translateX(10%) scale(1.1);
+    opacity: 0.6;
   }
 }
 
-@keyframes sun-pulse {
+@keyframes sun-rays {
   0%, 100% {
-    opacity: 0.08;
-    transform: scale(1);
+    opacity: 0.2;
+    transform: scale(1) rotate(0deg);
   }
   50% {
-    opacity: 0.15;
-    transform: scale(1.02);
+    opacity: 0.4;
+    transform: scale(1.05) rotate(2deg);
+  }
+}
+
+@keyframes sun-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }
 
 @keyframes wind-streak {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-100%) skewX(-15deg);
     opacity: 0;
   }
   20% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   80% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(250%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes wind-gust {
+  0% {
+    transform: translateX(-50%) scaleX(0.5);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(150%) scaleX(1.5);
     opacity: 0;
   }
 }
@@ -127,63 +204,263 @@ p {
   }
 }
 
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(201, 162, 39, 0.4);
+  }
+}
+
 /* === Utility Classes for Animations === */
 .animate-rain {
-  animation: rain-fall 2s linear infinite;
+  animation: rain-fall 1.5s linear infinite;
+}
+
+.animate-rain-heavy {
+  animation: rain-fall-heavy 1s linear infinite;
 }
 
 .animate-mist {
-  animation: mist-drift 8s ease-in-out infinite;
+  animation: mist-drift 6s ease-in-out infinite;
 }
 
 .animate-sun {
-  animation: sun-pulse 4s ease-in-out infinite;
+  animation: sun-rays 4s ease-in-out infinite;
+}
+
+.animate-sun-shimmer {
+  animation: sun-shimmer 3s ease-in-out infinite;
+  background-size: 200% 200%;
 }
 
 .animate-wind {
-  animation: wind-streak 3s linear infinite;
+  animation: wind-streak 2s linear infinite;
+}
+
+.animate-wind-gust {
+  animation: wind-gust 1.5s ease-out infinite;
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+  animation: fade-in-up 0.6s var(--ease-out) forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
+  animation: fade-in 0.5s var(--ease-out) forwards;
 }
 
-/* === Score Badge Styles === */
+.animate-float {
+  animation: gentle-float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* === Score Badge Styles - Updated for Light Theme === */
 .score-perfect {
-  background: rgba(92, 184, 92, 0.15);
+  background: rgba(74, 124, 89, 0.12);
   color: var(--score-perfect);
-  border: 1px solid rgba(92, 184, 92, 0.3);
+  border: 1px solid rgba(74, 124, 89, 0.25);
 }
 
 .score-good {
-  background: rgba(201, 162, 39, 0.15);
+  background: rgba(201, 162, 39, 0.12);
   color: var(--score-good);
-  border: 1px solid rgba(201, 162, 39, 0.3);
+  border: 1px solid rgba(201, 162, 39, 0.25);
 }
 
 .score-possible {
-  background: rgba(212, 118, 61, 0.15);
+  background: rgba(184, 115, 51, 0.12);
   color: var(--score-possible);
-  border: 1px solid rgba(212, 118, 61, 0.3);
+  border: 1px solid rgba(184, 115, 51, 0.25);
 }
 
-/* === Card Styles === */
+/* Score indicators for control panel */
+.score-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.score-dot-perfect {
+  background: var(--score-perfect);
+}
+
+.score-dot-good {
+  background: var(--score-good);
+}
+
+.score-dot-possible {
+  background: var(--score-possible);
+}
+
+/* === Card Styles - Horizontal Layout Ready === */
 .card {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   overflow: hidden;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+  border: 1px solid var(--border-light);
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-elevated);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
   background: var(--bg-card-hover);
+}
+
+.card-horizontal {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 200px;
+}
+
+.card-horizontal .card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-horizontal .card-content {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card image hover effect */
+.card-image img {
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* === Control Panel Styles === */
+.control-panel {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-light);
+  padding: var(--space-lg);
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.filter-chip:hover {
+  background: var(--bg-card);
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+}
+
+.filter-chip.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.filter-chip.active:hover {
+  background: var(--text-secondary);
+}
+
+/* Sort indicator */
+.sort-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-small);
+  color: var(--text-muted);
+}
+
+.sort-indicator.active {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* === Weather Visual Styles === */
+.weather-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rain-drop {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, rgba(140, 160, 180, 0.8));
+  border-radius: 2px;
+}
+
+.rain-drop-heavy {
+  width: 3px;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, rgba(100, 120, 150, 0.9));
+}
+
+.mist-layer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(180, 196, 204, 0.4) 30%,
+    rgba(180, 196, 204, 0.5) 50%,
+    rgba(180, 196, 204, 0.4) 70%,
+    transparent 100%
+  );
+}
+
+.sun-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 70% 20%,
+    rgba(201, 162, 39, 0.25) 0%,
+    rgba(201, 162, 39, 0.1) 40%,
+    transparent 70%
+  );
+}
+
+.wind-line {
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(160, 170, 180, 0.6) 50%,
+    transparent 100%
+  );
+  border-radius: 2px;
 }
 
 /* === Gradient Backgrounds === */
@@ -191,17 +468,81 @@ p {
   background: linear-gradient(
     180deg,
     var(--bg-primary) 0%,
-    var(--bg-secondary) 50%,
+    var(--bg-secondary) 40%,
     var(--bg-primary) 100%
   );
+  min-height: 100vh;
 }
 
 .gradient-gold {
   background: linear-gradient(
     135deg,
     var(--accent-gold) 0%,
-    #8a6914 100%
+    #b8922a 100%
   );
+}
+
+.gradient-hero {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(26, 31, 26, 0.4) 50%,
+    rgba(26, 31, 26, 0.8) 100%
+  );
+}
+
+/* === Journey Diagram Styles === */
+.journey-diagram {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) 0;
+}
+
+.journey-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.journey-node-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 0 2px var(--accent-gold);
+}
+
+.journey-node-label {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.journey-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-gold) 0%,
+    var(--accent-sage) 50%,
+    var(--accent-gold) 100%
+  );
+  position: relative;
+}
+
+.journey-line::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--accent-sage);
+  border-radius: 50%;
 }
 
 /* === Mapbox Overrides === */
@@ -217,6 +558,7 @@ p {
 /* === Custom Scrollbar === */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -224,12 +566,12 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
+  background: var(--border-medium);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
+  background: var(--text-muted);
 }
 
 /* === Focus States === */
@@ -240,6 +582,68 @@ p {
 
 /* === Selection === */
 ::selection {
-  background: var(--accent-gold);
-  color: var(--bg-primary);
+  background: rgba(201, 162, 39, 0.3);
+  color: var(--text-primary);
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+  position: fixed;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-card);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.theme-toggle:hover {
+  box-shadow: var(--shadow-card);
+  border-color: var(--border-medium);
+}
+
+.theme-toggle-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-gold);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .card-horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .card-horizontal .card-image {
+    height: 180px;
+  }
+
+  .control-panel {
+    padding: var(--space-md);
+  }
+
+  .filter-chip {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-micro);
+  }
+
+  .theme-toggle {
+    top: var(--space-md);
+    right: var(--space-md);
+  }
+}
+
+/* === Print Styles === */
+@media print {
+  .theme-toggle,
+  .weather-overlay {
+    display: none;
+  }
 }
